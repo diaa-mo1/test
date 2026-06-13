@@ -1,0 +1,180 @@
+/* ── Noor Al-Tareeq — Shared Layout CSS ── */
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0b0d0b;
+  color: #e7e3d8;
+}
+
+.topnav-container {
+  position: fixed;
+  inset: 0 auto auto 0;
+  z-index: 50;
+  border-bottom: 1px solid rgba(250, 214, 116, 0.12);
+  background: rgba(8, 10, 7, 0.92);
+  backdrop-filter: blur(18px);
+}
+
+.topnav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+.topnav-left,
+.topnav-right,
+.topnav-center {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.topnav-left {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.topnav-center {
+  justify-content: center;
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.topnav-right {
+  flex: 1 1 auto;
+  justify-content: flex-end;
+  min-width: 0;
+}
+
+.topnav-title {
+  color: #f5d87c;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.topnav-link {
+  color: #d1cabf;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.topnav-link:hover {
+  color: #f4d977;
+  background: rgba(244, 217, 119, 0.08);
+}
+
+.topnav-active {
+  color: #f4d977;
+  border-bottom: 2px solid #f4d977;
+}
+
+.topnav-search {
+  position: relative;
+  width: 100%;
+  max-width: 240px;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.04);
+}
+
+.topnav-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0.75rem 0.75rem 0.75rem 2.75rem;
+  background: transparent;
+  color: #f3eedf;
+  font-size: 0.95rem;
+}
+
+.topnav-search .material-symbols-outlined {
+  position: absolute;
+  left: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #f4d977;
+}
+
+.topnav-button {
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(244,217,119,0.1);
+  color: #f4d977;
+  padding: 0.75rem 1.2rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.topnav-button:hover {
+  background: rgba(244,217,119,0.16);
+  transform: translateY(-1px);
+}
+
+.content-offset {
+  padding-top: 100px;
+}
+
+.pattern-bg {
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(244,217,119,0.12) 0%, transparent 25%),
+    radial-gradient(circle at 85% 10%, rgba(244,217,119,0.08) 0%, transparent 20%),
+    linear-gradient(180deg, rgba(255,255,255,0.02), transparent 60%);
+}
+
+.glass-panel {
+  background: rgba(19, 20, 17, 0.65);
+  border: 1px solid rgba(244,217,119,0.08);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.gold-glow {
+  box-shadow: 0 0 18px rgba(244,217,119,0.18);
+}
+
+.hover-gold-glow:hover {
+  box-shadow: 0 0 26px rgba(244,217,119,0.28);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(244,217,119,0.55);
+  border-radius: 999px;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.font-amiri { font-family: 'Amiri', serif; }
